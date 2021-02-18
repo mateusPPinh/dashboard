@@ -10,7 +10,7 @@ export default createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
   }
 
   button {
