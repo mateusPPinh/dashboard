@@ -13,7 +13,7 @@ export const Container = styled.div`
 
   background-color: #111111;
   height: 100vh;
-  border-right: 1px solid #707070;
+  border-right: 1px solid #1e1e1e;
 `;
 
 export const SettingsContent = styled.div`
