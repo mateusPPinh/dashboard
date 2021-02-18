@@ -16,7 +16,7 @@ export const Grid = styled.div`
 
   grid-template-areas: 
     'SD SN DI DI',
-    'SD DO DD';
+    'SD DO DD DD';
 
     height: 100vh;
 `;
