@@ -16,6 +16,6 @@ const Layout: React.FC = () => {
       </Grid>
     </>
   );
-}
+};
 
 export default Layout;

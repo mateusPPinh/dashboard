@@ -10,6 +10,6 @@ const App: React.FC = () => {
       <GlobalStyle />
     </>
   );
-}
+};
 
 export default App;

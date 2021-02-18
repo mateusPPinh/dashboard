@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-import 
-{ 
-  MdSearch, 
+import {
+  MdSearch,
   MdFolder,
   MdPersonPinCircle,
   MdVerifiedUser,
   MdStar,
   MdSend,
-  MdGroup  
+  MdGroup,
 } from 'react-icons/md';
 
 export const Container = styled.div`
@@ -24,7 +23,7 @@ export const Container = styled.div`
     width: 8px;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: rgb(32,34,37);
+    background-color: rgb(32, 34, 37);
     border-radius: 4px;
   }
   ::-webkit-scrollbar-track {
@@ -80,10 +79,10 @@ export const UserTasksList = styled.div`
   div {
     display: flex;
     align-items: center;
-    background: #F24333;
+    background: #f24333;
     padding: 10px 10px;
     border-radius: 4px;
-    
+
     span {
       color: #e7e7e7;
       font-size: 15px;

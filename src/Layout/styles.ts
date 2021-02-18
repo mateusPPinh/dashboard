@@ -5,7 +5,7 @@ import styled from 'styled-components';
  * FL => Favorite List
  * DI => Dashboard Info
  * DO => Dashboard Options
- * DD => Dashboard Data 
+ * DD => Dashboard Data
  */
 
 export const Grid = styled.div`
@@ -13,9 +13,7 @@ export const Grid = styled.div`
   grid-template-columns: 71px 240px auto;
   grid-template-rows: 46px auto 52px auto;
 
-  grid-template-areas: 
-    'SD FV DO',
-    'SD FV DO';
-    
+  grid-template-areas: 'SD FV DO', 'SD FV DO';
+
   height: 100vh;
 `;

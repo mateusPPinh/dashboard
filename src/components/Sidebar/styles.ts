@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 import {
   MdSettings,
   MdDataUsage,
@@ -6,10 +6,10 @@ import {
   MdFolderOpen,
   MdSettingsApplications,
   MdDateRange,
-} from "react-icons/md";
+} from 'react-icons/md';
 
 export const Container = styled.div`
-  grid-area: "SD";
+  grid-area: 'SD';
 
   background-color: #111111;
   height: 100vh;
@@ -52,7 +52,7 @@ export const CaseIcon = styled(MdFolderOpen)`
 `;
 
 export const ConfigIcon = styled(MdSettingsApplications)`
- ${iconsStyle};
+  ${iconsStyle};
 `;
 
 export const BaseIcon = styled(MdDateRange)`

@@ -1,42 +1,42 @@
-import React from "react";
-import { SearchIcon } from "../FavoriteList/styles";
-import { LineChart, XAxis, YAxis, CartesianGrid, Line } from "recharts";
+import React from 'react';
+import { LineChart, XAxis, YAxis, CartesianGrid, Line } from 'recharts';
+import { SearchIcon } from '../FavoriteList/styles';
 
-import { Container, Header, Content, Card } from "./styles";
+import { Container, Header, Content, Card } from './styles';
 
 const data = [
   {
-    name: "01/04",
+    name: '01/04',
     subscribers: 4000,
     new: 54,
   },
   {
-    name: "02/04",
+    name: '02/04',
     subscribers: 3000,
     new: 1400,
   },
   {
-    name: "03/04",
+    name: '03/04',
     subscribers: 2000,
     new: 3000,
   },
   {
-    name: "04/04",
+    name: '04/04',
     subscribers: 2780,
     new: 400,
   },
   {
-    name: "05/04",
+    name: '05/04',
     subscribers: 1890,
     new: 400,
   },
   {
-    name: "06/04",
+    name: '06/04',
     subscribers: 2390,
     new: 812,
   },
   {
-    name: "07/04",
+    name: '07/04',
     subscribers: 3490,
     new: 321,
   },

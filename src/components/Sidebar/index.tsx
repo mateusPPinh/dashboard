@@ -1,9 +1,8 @@
 import React from 'react';
 
-import 
-{ 
-  Container, 
-  SettingsContent, 
+import {
+  Container,
+  SettingsContent,
   SettingsIcon,
   SidebarOptions,
   DataIcon,
@@ -12,7 +11,7 @@ import
   ConfigIcon,
   BaseIcon,
   Footer,
-  UserInitialLetterName, 
+  UserInitialLetterName,
 } from './styles';
 
 const Sidebar: React.FC = () => {
@@ -55,6 +54,6 @@ const Sidebar: React.FC = () => {
       </Footer>
     </Container>
   );
-}
+};
 
 export default Sidebar;

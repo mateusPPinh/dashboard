@@ -7,7 +7,6 @@ export const Container = styled.div`
   /* padding: 20px; */
 `;
 
-
 export const Header = styled.div`
   height: 52px;
   border-bottom: 1px solid #1e1e1e;
@@ -19,14 +18,13 @@ export const Header = styled.div`
   justify-content: space-between;
 
   div {
-    
     ul {
       display: flex;
       list-style: none;
 
       li {
         a {
-          margin-left:  15px;
+          margin-left: 15px;
           color: #e7e7e7;
         }
       }
