@@ -1,14 +1,25 @@
 import React from 'react';
+import { ThemeProvider, DefaultTheme } from 'styled-components';
 
 import Layout from './Layout';
 import GlobalStyle from './styles/globals';
+import usePersistedState from './hooks/usePersistedState';
+
+import light from './styles/themes/light';
+import dark from './styles/themes/dark';
 
 const App: React.FC = () => {
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark);
+
+  const toggleTheme = (): void => {
+    setTheme(theme.title === 'light' ? dark : light);
+  };
+
   return (
-    <>
-      <Layout />
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
-    </>
+      <Layout toggleTheme={toggleTheme} />
+    </ThemeProvider>
   );
 };
 

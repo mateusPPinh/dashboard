@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #111111;
+  background: ${props => props.theme.colors.background};
   grid-area: 'DO';
   height: 100vh;
-  /* padding: 20px; */
 `;
 
 export const Header = styled.div`
   height: 52px;
-  border-bottom: 1px solid #1e1e1e;
+  border-bottom: 1px solid ${props => props.theme.colors.line};
   padding: 20px;
 
   display: flex;
@@ -25,7 +24,7 @@ export const Header = styled.div`
       li {
         a {
           margin-left: 15px;
-          color: #e7e7e7;
+          color: ${props => props.theme.colors.texts};
         }
       }
     }
@@ -37,7 +36,7 @@ export const Content = styled.div`
 `;
 
 export const Card = styled.div`
-  background: #1e1e1e;
+  background: ${props => props.theme.colors.card};
   border-radius: 8px;
   margin-bottom: 25px;
   padding: 15px 20px;

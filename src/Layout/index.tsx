@@ -6,13 +6,17 @@ import DashboardOptions from '../components/DashboardOptions';
 
 import { Grid } from './styles';
 
-const Layout: React.FC = () => {
+interface Props {
+  toggleTheme(): void;
+}
+
+const Layout: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <>
       <Grid>
         <SideBar />
         <FavoriteList />
-        <DashboardOptions />
+        <DashboardOptions toggleTheme={toggleTheme} />
       </Grid>
     </>
   );

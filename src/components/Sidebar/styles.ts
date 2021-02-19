@@ -11,7 +11,7 @@ import {
 export const Container = styled.div`
   grid-area: 'SD';
 
-  background-color: #111111;
+  background-color: ${props => props.theme.colors.background};
   height: 100vh;
   border-right: 1px solid #1e1e1e;
 `;
@@ -21,13 +21,13 @@ export const SettingsContent = styled.div`
 `;
 
 const iconsStyle = css`
-  color: #707070;
+  color: ${props => props.theme.colors.icons};
   font-size: 25px;
   margin-bottom: 15px;
   transition: color 0.2s;
 
   &:hover {
-    color: #1483e9;
+    color: ${props => props.theme.colors.line};
   }
 `;
 
@@ -65,7 +65,7 @@ export const Footer = styled.div`
 `;
 
 export const UserInitialLetterName = styled.div`
-  background-color: #052440;
+  background-color: ${props => props.theme.colors.texts};
   border-radius: 50%;
   padding: 6px 8px;
 
