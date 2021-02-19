@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   MdSearch,
   MdFolder,
@@ -10,7 +10,7 @@ import {
 } from 'react-icons/md';
 
 export const Container = styled.div`
-  background: #111111;
+  background: ${props => props.theme.colors.background};
 
   grid-area: 'FL';
 
@@ -33,7 +33,7 @@ export const Container = styled.div`
 
 export const TitleSection = styled.div`
   h1 {
-    color: #e7e7e7;
+    color: ${props => props.theme.colors.texts};
     font-size: 14px;
   }
 `;
@@ -45,7 +45,7 @@ export const SearchArea = styled.div`
   justify-content: space-between;
 
   p {
-    color: #e7e7e7;
+    color: ${props => props.theme.colors.texts};
     font-size: 14px;
     font-weight: bold;
   }
@@ -53,7 +53,7 @@ export const SearchArea = styled.div`
 
 export const SearchIcon = styled(MdSearch)`
   font-size: 20px;
-  color: #e7e7e7;
+  color: ${props => props.theme.colors.icons};
 `;
 
 export const OptionArea = styled.div`
@@ -79,12 +79,12 @@ export const UserTasksList = styled.div`
   div {
     display: flex;
     align-items: center;
-    background: #f24333;
+    background: ${props => props.theme.colors.button};
     padding: 10px 10px;
     border-radius: 4px;
 
     span {
-      color: #e7e7e7;
+      color: ${props => props.theme.colors.texts};
       font-size: 15px;
       margin-left: 10px;
       font-weight: bold;
@@ -92,14 +92,17 @@ export const UserTasksList = styled.div`
   }
 `;
 
-export const FolderIcon = styled(MdFolder)`
+const iconsStyle = css`
   font-size: 20px;
-  color: #e7e7e7;
+  color: ${props => props.theme.colors.icons};
+`;
+
+export const FolderIcon = styled(MdFolder)`
+  ${iconsStyle};
 `;
 
 export const GroupIcon = styled(MdGroup)`
-  font-size: 20px;
-  color: #e7e7e7;
+  ${iconsStyle};
 `;
 
 export const Content = styled.div`
@@ -119,7 +122,7 @@ export const List = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    color: #e7e7e7;
+    color: ${props => props.theme.colors.texts};
   }
 `;
 

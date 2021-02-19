@@ -11,6 +11,7 @@ export default createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased !important;
     font-family: 'Noto Sans', sans-serif;
+    background: ${props => props.theme.colors.background}
   }
 
   button {

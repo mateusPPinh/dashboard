@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { LineChart, XAxis, YAxis, CartesianGrid, Line } from 'recharts';
-import { SearchIcon } from '../FavoriteList/styles';
+import Switch from 'react-switch';
+import { ThemeContext } from 'styled-components';
 
 import { Container, Header, Content, Card } from './styles';
 
@@ -42,7 +43,13 @@ const data = [
   },
 ];
 
-const DashboardOptions: React.FC = () => {
+interface Props {
+  toggleTheme(): void;
+}
+
+const DashboardOptions: React.FC<Props> = ({ toggleTheme }) => {
+  const { colors, title } = useContext(ThemeContext);
+
   return (
     <Container>
       <Header>
@@ -66,9 +73,17 @@ const DashboardOptions: React.FC = () => {
           </ul>
         </div>
 
-        <a href="#">
-          <SearchIcon />
-        </a>
+        <Switch
+          onChange={toggleTheme}
+          checked={title === 'dark'}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          width={40}
+          height={10}
+          handleDiameter={20}
+          offColor={colors.texts}
+          onColor={colors.button}
+        />
       </Header>
 
       <Content>
